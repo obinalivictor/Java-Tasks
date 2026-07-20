@@ -4,7 +4,7 @@ public class Methods{
    public static void main(String[] args){
    
    
-   Multiples();
+   Multiples(4);
    Word();
    
    int numberresult = DoubleIt(10);
@@ -55,13 +55,16 @@ public static boolean TrueFalse(int n){
    return false;
 }	
  public static void Multiples(int a){
- 
+ int number = 1;
 
- for(int count= 1;count >= 5;count++)
+ for(int count= 1;count <= 5;count++){
  
-   a = a * count;
+   number = a * count;
  
- System.out.println(a);
+ System.out.println(number);
+ 
+   }
+ 
  }
    
    
