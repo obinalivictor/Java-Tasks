@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+    public class Primenumbers1 {
+
+        public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter number: ");
+
+        int Number = input.nextInt();
+
+        int numberResult = dividenumber(Number);
+
+        System.out.println("Sum of prime number: " + numberResult);
+
+
+}
+
+    public static int dividenumber(int digit){
+     int sum = 0;
+    
+    for(int dividevalue = 2; dividevalue <= digit; dividevalue ++){
+
+    while(digit % dividevalue == 0){
+
+        sum += dividevalue;
+        digit = digit / dividevalue;
+   }
+    }
+        return sum;
+        }
+
+
+        }
